@@ -23,6 +23,7 @@ public class Main  {
         map.put("小明","游泳");
         map.put("大王","捉迷藏");
         map.put("小猴","跳皮筋");
+        map.put("约翰","吃披萨");
         Iterator interator= (Iterator) map.entrySet().iterator();
         while (interator.hasNext()){
             Map.Entry entry= (Map.Entry) interator.next();
