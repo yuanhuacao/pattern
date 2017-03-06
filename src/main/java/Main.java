@@ -32,8 +32,6 @@ public class Main  {
         Arrays.asList("a","b","d").forEach((e)-> {
             System.out.println(e);
             System.out.println(e);
-
-
         });
 
     }
