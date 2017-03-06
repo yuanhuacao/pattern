@@ -4,10 +4,6 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Main  {
-
-
-
-
     public static void main(String[] args) {
         System.out.println("Hello World!");
         System.out.println(WeekEnum.existsDay(3));
@@ -15,7 +11,6 @@ public class Main  {
         if (1 == 2) {
         } else {
         }
-
         StringBuffer sb = new StringBuffer();
         Main.sayHi("小明", "我来自农村，喜欢游泳，捉迷藏等游戏");
 
@@ -23,6 +18,7 @@ public class Main  {
         map.put("小明","游泳");
         map.put("大王","捉迷藏");
         map.put("小猴","跳皮筋");
+        map.put("大力","掷铁饼");
         Iterator interator= (Iterator) map.entrySet().iterator();
         while (interator.hasNext()){
             Map.Entry entry= (Map.Entry) interator.next();
@@ -32,10 +28,7 @@ public class Main  {
         Arrays.asList("a","b","d").forEach((e)-> {
             System.out.println(e);
             System.out.println(e);
-
-
         });
-
     }
 
     public static void sayHi(String man, String content) {
