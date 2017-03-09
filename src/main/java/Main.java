@@ -30,6 +30,11 @@ public class Main  {
             System.out.println(e);
             System.out.println(e);
         });
+        List list= new ArrayList();
+        list.add("fdfd");
+        list.add("fdfd");
+        list.add("fdfd");
+        System.out.println(String.join("#", list));
     }
 
     public static void sayHi(String man, String content) {
@@ -38,9 +43,13 @@ public class Main  {
 
     public  void mapForReach(){
         Map<String,String> map =new HashMap<>();
-
-
-
     }
+    public void  join(String[] args){
+        List list=new ArrayList();
+//        list.
+String.join("/","abc");
+//        Arrays.
+    }
+
 
 }
