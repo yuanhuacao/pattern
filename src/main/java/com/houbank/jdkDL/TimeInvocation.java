@@ -15,9 +15,9 @@ public class TimeInvocation implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("汽车来了，呜呜呜呜。。。。");
+        System.out.println("我是代理： 汽车来了，呜呜呜呜。。。。");
             method.invoke(target,args);
-        System.out.println("汽车开走了，嘻嘻嘻~~~~");
+        System.out.println("我是代理:  汽车开走了，嘻嘻嘻~~~~");
 
         return null;
     }

@@ -27,6 +27,7 @@ public class GsonUtil {
 
     public static  void objectOprate(){
         Gson gson=new Gson();
+
         User user=new User("小明",18,"2635@qq.com");
         System.out.println(gson.toJson(user));
 

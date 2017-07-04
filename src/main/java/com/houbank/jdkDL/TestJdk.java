@@ -8,19 +8,26 @@ import java.lang.reflect.Proxy;
  */
 public class TestJdk {
 
+    public void test(){
+        QRCar qrCar=new QRCar();
+        String a="";
 
-    static  QRCar qrCar=new QRCar();
-    static JLCar jlCar=new JLCar();
-    static  InvocationHandler h=new TimeInvocation(qrCar);
-    static  InvocationHandler h2=new TimeInvocation(jlCar);
+
+    }
+
+
 
 
 
     public static void main(String[] args) {
-        Car car=(Car) Proxy.newProxyInstance(QRCar.class.getClassLoader(),qrCar.getClass().getInterfaces(),h);
-        car.move();
-        Car car2=(Car) Proxy.newProxyInstance(JLCar.class.getClassLoader(),jlCar.getClass().getInterfaces(),h2);
-        car2.move();
+
+         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+         InvocationHandler h=new TimeInvocation(new JLCar());
+         Car car=(Car) Proxy.newProxyInstance(Car.class.getClassLoader(),JLCar.class.getInterfaces(),h);
+         car.move();
+
+
+
 
     }
 
