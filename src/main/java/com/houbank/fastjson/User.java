@@ -40,12 +40,7 @@ public class User {
 
     @Override
     public String toString() {
-        try {
-            User u=new User();
-            User u2= (User) u.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
+
         return "User{" +
             "name='" + name + '\'' +
             ", hobby=" + hobby +

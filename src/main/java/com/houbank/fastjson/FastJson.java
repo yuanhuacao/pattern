@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Writer;
 import java.lang.reflect.AnnotatedType;
+import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.*;
@@ -48,20 +49,28 @@ public class FastJson {
         list.add(tom);
         System.out.println(JSON.toJSON(list));
 
+
         JSONArray jsonArray=new JSONArray(1);
         jsonArray.add(1);
         jsonArray.add(2);
-        System.out.println(jsonArray);
 
 
-        System.out.println();
+
+
 
         JSONObject jsonObject=(JSONObject) JSON.toJSON(tom);
+
+        User user=JSON.toJavaObject(jsonObject,User.class);
+        System.out.println("user:"+user.toString());
         JSONArray jsonArray1=(JSONArray) jsonObject.get("hobby");
+
+
+
         jsonArray1.get(0);
 
 
         System.out.println( hobby  instanceof   Collection);
+
 
 
 

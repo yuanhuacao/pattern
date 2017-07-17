@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+    <user id="1">
+        <name>小明</name>
+        <age>18</age>
+    </user>
+
+    <user id="2">
+        <name>旺达</name>
+        <age>31</age>
+        <birthday>19900827</birthday>
+    </user>
+</users>
+
+
