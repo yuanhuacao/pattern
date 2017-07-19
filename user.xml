@@ -9,6 +9,9 @@
         <name>旺达</name>
         <age>31</age>
         <birthday>19900827</birthday>
+        <hobby>
+            <footBall>足球</footBall>
+        </hobby>
     </user>
 </users>
 

@@ -27,7 +27,7 @@ public class Dom {
 
     public static void main(String[] args) throws Exception{
         Dom dom=new Dom();
-        dom.createXml("user2.xml");
+//        dom.createXml("user2.xml");
         dom.parserXml("user.xml");
     }
 
@@ -76,7 +76,7 @@ public class Dom {
                 Node node = employeeInfo.item(j);
                 NodeList employeeMeta = node.getChildNodes();
                 for (int k = 0; k < employeeMeta.getLength(); k++) {
-                    System.out.println(employeeMeta.item(k).getNodeName()
+                    System.out.println("nodeName: "+employeeMeta.item(k).getNodeName()
                         + ":" + employeeMeta.item(k).getTextContent());
                 }
             }
