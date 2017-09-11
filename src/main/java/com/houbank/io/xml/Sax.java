@@ -1,7 +1,9 @@
 package com.houbank.io.xml;
 
 import com.sun.org.apache.xml.internal.resolver.readers.SAXParserHandler;
+import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
@@ -20,8 +22,6 @@ public class Sax {
 
 
     }
-
-
 
     public void parser() {
 

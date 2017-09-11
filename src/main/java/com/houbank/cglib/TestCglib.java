@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
  * Created by Administrator on 2017/2/25.
  */
 public class TestCglib {
-    private Enhancer enhancer=new Enhancer();
+
 
     private  final  static Logger logger= LoggerFactory.getLogger(TestCglib.class);
     public static void main(String[] args) {
@@ -17,7 +17,6 @@ public class TestCglib {
         CivicCar civicCar1=(CivicCar) cglibProxy.getProxy(civicCar.getClass());
         civicCar1.say();
         logger.debug("这是一个degbug{},{}","dd","cc","dd");
-
 
 
     }

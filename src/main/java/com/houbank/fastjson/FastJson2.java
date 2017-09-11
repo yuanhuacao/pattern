@@ -15,7 +15,6 @@ public class FastJson2 {
 
     public static void main(String[] args) {
         User tom = new User();
-        tom.setAge(18);
         tom.setName("tom");
         List hobby=new ArrayList();
         hobby.add("football");
